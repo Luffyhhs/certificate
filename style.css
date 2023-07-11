@@ -1,0 +1,121 @@
+/*
+  --- 01 Typography System
+  -Font Size(px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+  
+  
+  -Font Family
+  Google Font :Open Sans;
+			        -	Clicker Script
+  default : sans-serif
+  
+  -Font Weight
+  default : 400
+  heading-primary : 700
+  
+  -Line Height
+  default : 1
+  heading-primary : 1.1
+  
+  --- 02 Color
+  -text color: #231F20;
+  -Primary : #631430, #9D1645;
+  -Tints : ,
+  -Shades : ,
+  -Accents
+  -Grays : ;
+  
+  --- 03 Shadow
+  
+  --- 04 Border Radius
+  default : 9px;
+  
+  -Spacing System(px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  */
+
+:root {
+  --text-color: #231f20;
+  --dark-black: #1c1917;
+  --gray: #77676d;
+  --primary: #631430;
+  --secondary: #9d1645;
+  --light-gold: #facc15;
+  --blue: #3730a3;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /*Font-size => 10 */
+  font-size: 62.5%;
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1;
+}
+
+.container {
+  max-width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(90deg, var(--secondary) 50%, var(--primary) 100%);
+}
+
+.cert_recognition {
+  width: 90%;
+  height: 73%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("./img/bgImage.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.form {
+  max-width: 35rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h3 {
+  font-family: inherit;
+  font-style: italic;
+  font-size: 1.6rem;
+  color: var(--gray);
+}
+
+.name {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 3.2rem;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--dark-black);
+  margin: 1.2rem 0;
+}
+@media only screen and (max-width: 37.5em) {
+  .name {
+    margin: 3px 0;
+  }
+}
+.years {
+  margin-bottom: 2.4rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .years {
+    margin-bottom: 0.5rem;
+  }
+}
