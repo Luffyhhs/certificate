@@ -54,6 +54,7 @@ html {
   /* scroll-behavior: smooth; */
 }
 @media only screen and (max-width: 31.25em) {
+  /* 500px */
   html {
     font-size: 45%;
   }
@@ -88,6 +89,7 @@ body {
   background-position: center;
 }
 @media only screen and (max-width: 37.5em) {
+  /* 600px */
   .cert_recognition {
     width: 100%;
     height: 80%;
@@ -118,6 +120,7 @@ h3 {
   margin: 1.2rem 0;
 }
 @media only screen and (max-width: 37.5em) {
+  /* 600px */
   .name {
     margin: 3px 0;
   }
@@ -126,7 +129,33 @@ h3 {
   margin-bottom: 2.4rem;
 }
 @media only screen and (max-width: 37.5em) {
+  /* 600px */
   .years {
     margin-bottom: 0.5rem;
+  }
+}
+
+.share_btn {
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 56.25em) {
+  /* 900px */
+  .share_btn {
+    bottom: 14rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  /* 600px */
+  .share_btn {
+    bottom: 20rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  /* 500px */
+  .share_btn {
+    bottom: 30rem;
   }
 }
